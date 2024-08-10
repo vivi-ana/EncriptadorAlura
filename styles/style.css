@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+:root {
+    --primary-color: #F3F5FC;
+    --inter-font: 'Inter', sans-serif;
+    --secondary-color: #0A3871;
+    --tertiary-color: white;
+    --gray-500-color: #343A40;
+    --gray-400-color: #495057;
+    --button-active-color: #D8DFE8;
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: var(--primary-color);
+    font-family: var(--inter-font);
+}
+
+.encriptador {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.encriptador__logo {
+    display: flex;
+    margin-top: 40px;
+    margin-left: 84px;
+    width: 31.09px;
+    height: 48px;
+}
+.encriptador__contenido {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+.encriptador__contenido__ingresado {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 120px;
+}
+.encriptador__contenido__ingresado__texto {
+    font-family: var(--inter-font);
+    background-color: transparent;
+    border: none; 
+    outline: none;
+    font-weight: 400;
+    font-size: 2rem; 
+    line-height: 48px;
+    color: var(--secondary-color);
+    width: 680px;
+    height: auto;
+    resize: none;
+    padding-top: 120px;
+    padding-left: 80px;
+    overflow: hidden;
+}
+.encriptador__contenido__ingresado__texto::placeholder {
+    color: var(--secondary-color);
+}
+.encriptador__contenido__ingresado__bottom {
+    display: flex;
+    flex-direction: column;
+}
+.encriptador__contenido__ingresado__bottom__aclaracion {
+    padding-left: 80px;
+    display: flex;
+    align-items: center;
+}
+.encriptador__contenido__ingresado__bottom__aclaracion__nota {
+    padding-left: 8px;
+    color: var(--gray-400-color);
+    font-family: var(--inter-font);
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 18px;
+}
+.encriptador__contenido__ingresado__bottom__botones {
+    padding-left: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    width: 680px;
+    height: 67px ;
+}
+.encriptador__contenido__ingresado__bottom__botones__btnEncriptar {
+    font-family: var(--inter-font);
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 19.36px;
+    color: var(--tertiary-color);
+    border: 1px solid var(--secondary-color);
+    background-color: var(--secondary-color); 
+}
+.encriptador__contenido__ingresado__bottom__botones__btnDesencriptar {
+    font-family: var(--inter-font);
+    margin-left: 24px;
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 19.36px;
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+    background-color: var(--button-active-color); 
+}
+
+.encriptador__contenido__resultado {
+    font-family: var(--inter-font);
+    background-color: var(--tertiary-color);
+    width: 400px;
+    height: 944px;
+    border-radius: 32px;
+    box-shadow: 0 24px 32px -8px rgba(0, 0, 0, 0.08);
+    margin-top: 40px;
+    margin-left: 40px;
+}
+.encriptador__contenido__resultado__estatico__imagen {
+    padding-top: 243px;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+.encriptador__contenido__resultado__estatico__texto {
+    padding: 32px;
+}
+.encriptador__contenido__resultado__estatico__texto__uno {
+    font-family: var(--inter-font);
+    color: var(--gray-500-color);
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 28.8px;
+    text-align: center;
+}
+.encriptador__contenido__resultado__estatico__texto__dos {
+    font-family: var(--inter-font);
+    color: var(--gray-400-color);
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 24px;
+    text-align: center;
+}
+.encriptador__contenido__resultado__dinamico__salida {
+    font-family: var(--inter-font);
+    background-color: var(--tertiary-color);
+    border: none;
+    outline: none;
+    height: 765px;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 36px;
+    resize: none;
+    overflow: hidden;
+    width: 336px;
+    padding: 32px;
+    border-radius: 32px;
+    display: none;
+}
+.encriptador__contenido__resultado__dinamico__btnCopiar {
+    font-family: var(--inter-font);
+    margin-left: 32px;
+    margin-right: 32px;
+    margin-bottom: 32px;
+    width: 336px;
+    height: 67px;
+    border-radius: 24px;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 19.36px;
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+    background-color: var(--tertiary-color); 
+    display: none;
+}
+
+.footer_content {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    margin-top: 20px;
+    padding: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    align-items: center
+}
+.footer_content_social_icons {
+    padding: 8px;
+}
+.footer_content_social_icons_link {
+    padding: 8px;
+}
+
+.encriptador__contenido__mensaje {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .encriptador__logo {
+        margin-left: 40px;
+    }
+
+    .encriptador__contenido__ingresado__texto {
+        padding-left: 40px;
+    }
+    .encriptador__contenido__ingresado__bottom__aclaracion { 
+        padding-left: 40px;
+    }
+    .encriptador__contenido__ingresado__bottom__botones { 
+        padding-left: 40px;
+    }
+
+    .encriptador__contenido__resultado {
+        width: 688px;
+        height: auto;
+    }
+    .encriptador__contenido__resultado__estatico__imagen {
+        display: none;
+    }
+    .encriptador__contenido__resultado__estatico__texto {
+        padding: 32px;
+    }
+    .encriptador__contenido__resultado__estatico__texto__uno {
+        padding: 32px;
+    }
+
+    .encriptador__contenido__resultado__dinamico {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: flex-start;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .encriptador__contenido__resultado__dinamico__btnCopiar { 
+        align-items: center;
+    }
+
+    .encriptador__contenido__resultado__dinamico__salida {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+@media screen and (max-width: 576px) {
+    .encriptador__logo {
+        margin-left: 16px;
+    }
+
+    .encriptador__contenido {
+        width: 343px;
+    }
+    .encriptador__contenido__ingresado {
+        width: 343px;
+    }
+    .encriptador__contenido__ingresado__texto {
+        padding-left: 16px;
+        padding-top: 150px;
+        width: 343px;
+    }
+    .encriptador__contenido__ingresado__bottom__aclaracion {
+        padding-left: 16px;
+    }
+    .encriptador__contenido__ingresado__bottom__botones {
+        display: flex;
+        width: 343px;
+        height: 158px;
+        padding-left: 0px;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 10px;
+    }
+    .encriptador__contenido__ingresado__bottom__botones__btnDesencriptar {
+        margin-left: 0px;
+        padding-left: 16px;
+    }
+
+    .encriptador__contenido__resultado {
+        width: 327px;
+        height: auto;
+        margin-left: auto;
+    }
+    .encriptador__contenido__resultado__estatico {
+        padding-top: 32px;
+    }
+    .encriptador__contenido__resultado__estatico__texto__dos { 
+        margin: 24px;
+    }
+
+    .encriptador__contenido__resultado__dinamico__btnCopiar { 
+        Width: 279px;
+        Height: 67px;
+    }
+    .encriptador__contenido__resultado__dinamico__salida {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    footer {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+.heart {
+    color: red;
+}
