@@ -306,6 +306,9 @@ body {
         margin: 24px;
     }
 
+    .encriptador__contenido__resultado__dinamico {
+        align-items: normal;
+    }
     .encriptador__contenido__resultado__dinamico__btnCopiar { 
         Width: 279px;
         Height: 67px;
