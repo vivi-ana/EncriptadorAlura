@@ -6,5 +6,4 @@ El trabajo final de la primera etapa del curso de Alura consiste en el desarroll
 - **Frontend:**
     HTML, CSS Layout: Flexbox, JavaScript.
 ## Acceder al Proyecto Desplegado
-    El proyecto está disponible en GitHub Pages.
-    https://vivi-ana.github.io/EncriptadorAlura/
+    El proyecto está disponible en GitHub Pages [aquí](https://vivi-ana.github.io/EncriptadorAlura/)
