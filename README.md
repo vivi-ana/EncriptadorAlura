@@ -2,6 +2,9 @@
 El trabajo final de la primera etapa del curso de Alura consiste en el desarrollo de un encriptador de texto que permite a los usuarios ingresar texto para su posterior encriptación o desencriptación.
 # Tecnologías Utilizadas
 - **Diseño:** 
-- Figma proporcionado por Alura.
+    Figma proporcionado por Alura.
 - **Frontend:**
-- HTML, CSS Layout: Flexbox, JavaScript.
+    HTML, CSS Layout: Flexbox, JavaScript.
+## Acceder al Proyecto Desplegado
+    El proyecto está disponible en GitHub Pages.
+    https://vivi-ana.github.io/EncriptadorAlura/
